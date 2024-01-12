@@ -15,6 +15,8 @@ import utils.Pages;
  */
 public class Draggable_AutoScrolling_Test extends Hooks {
 
+    Pages pages = new Pages();
+
     @Test
     void testAutoScrolling() {
         //1. Open the browser and navigate to the page

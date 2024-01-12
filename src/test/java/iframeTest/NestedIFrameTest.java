@@ -4,17 +4,15 @@ import BaseTest.Hooks;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utils.BrowserUtils;
-import utils.Driver;
 
-/**
- * 1. Land on home page
- * 2. Click on webautomation link
- * 3.Click on Iframe link
- * 4.Click on Nested Iframe link
- * 5.Verify that the header text "Join Inar Academy'sIntro Session" In iframe
- */
-public class NestedIframe_Test extends Hooks {
-
+public class NestedIFrameTest extends Hooks {
+    /**
+     * 1. Land on home page
+     * 2. Click on webautomation link
+     * 3.Click on Iframe link
+     * 4.Click on Nested Iframe link
+     * 5.Verify that the header text "Join Inar Academy'sIntro Session" In iframe
+     */
     @Test
     void testNestedIframe(){
         //1. Land on home page
@@ -22,11 +20,13 @@ public class NestedIframe_Test extends Hooks {
         pages.getHomePage().clickOnWebAutomationLink();
 
         BrowserUtils.scrollDownWithPageDown();
+        BrowserUtils.wait(1.0);
 
         //3.Click on Iframe link
         pages.getWebAutomationPage().clickOnIframeLink();
 
         BrowserUtils.scrollUpWithPageUp();
+        BrowserUtils.wait(1.0);
 
         //4.Click on Nested Iframe link
         pages.getWebAutomationPage().clickOnNestedIframe();

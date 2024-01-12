@@ -10,7 +10,6 @@ public class Draggable_Def_Functionality_Test extends Hooks {
 
     @Test
     public void testDefaultDraggable() {
-        //1.get to url
         pages.getHomePage().clickOnWebAutomationLink();
 
         // 2. click on the draggable button

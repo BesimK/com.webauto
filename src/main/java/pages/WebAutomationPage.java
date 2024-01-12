@@ -3,7 +3,12 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class WebAutomationPage extends BasePage {
+
+    @FindBy(xpath = "(//a[@href='/'])[1]")
+    private WebElement inarAcademyImage;
 
     @FindBy(linkText = "Draggable")
     private WebElement draggableLink;
@@ -13,10 +18,6 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Auto Scrolling")
     private WebElement autoScrollingLink;
-    @FindBy(linkText = "Constrain Movement")
-    private WebElement constrainMovementLink;
-    @FindBy(linkText = "Cursor Style")
-    private WebElement cursorStylelink;
 
     @FindBy(linkText = "Droppable")
     private WebElement droppableLink;
@@ -32,16 +33,34 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Nested Iframe")
     private WebElement nestedIframeLink;
+    @FindBy(linkText = "Normal Iframe")
+    private WebElement normalIframeLink;
 
+    @FindBy(linkText = "Serialize")
+    private WebElement serializeLink;
+    @FindBy(linkText = "Constrain Movement")
+    private WebElement constrainMovementLink;
+    @FindBy(linkText = "Handles")
+    private WebElement handlesLink;
+
+    @FindBy(linkText = "Accept")
+    private WebElement acceptLink;
+    @FindBy(linkText = "Revert draggable position")
+    private WebElement revertDraggablePositionLink;
+    @FindBy(linkText = "Synchronus Resize")
+    private WebElement synchronousResizeLink;
+
+    @FindBy(linkText = "Textarea")
+    private WebElement textAreaLink;
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
+    @FindBy(linkText = "Alert Types")
+    private WebElement alertTypesLink;
 
-    @FindBy(linkText = "Animate")
-    private WebElement animateLink;
-
-    public void clickOnCursorStyleLink(){
-    cursorStylelink.click();
+    public void clickInarAcademyImageLink() {
+        inarAcademyImage.click();
     }
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -50,12 +69,6 @@ public class WebAutomationPage extends BasePage {
         defaultFunctionalityLink.click();
     }
 
-    public void clickOnAutoScrollingLink() {
-        autoScrollingLink.click();
-    }
-    public void clickOnConstrainMovementLink(){
-        constrainMovementLink.click();
-    }
     public void clickOnDroppableDefaultFunctionalityLink() {
         defaultFunctionalityLink.click();
     }
@@ -64,35 +77,71 @@ public class WebAutomationPage extends BasePage {
         droppableLink.click();
     }
 
-    public void clickOnResizableLink(){
+    public void clickOnAutoScrollingLink() {
+        autoScrollingLink.click();
+    }
+
+    public void clickOnResizableLink() {
         resizableLink.click();
     }
 
-    public void clickOnResizableDefaultFuncLink(){
+    public void clickOnResizableDefaultFuncLink() {
         defaultFunctionalityLink.click();
     }
 
-    public void clickOnSelectableLink(){
+    public void clickOnSelectableLink() {
         selectableLink.click();
     }
 
-    public void clickOnDefaultFunctionality(){
+    public void clickOnDefaultFunctionality() {
         defaultFunctionalityLink.click();
     }
 
-    public void clickOnIframeLink(){
+    public void clickOnIframeLink() {
         iframeLink.click();
     }
 
-    public void clickOnNestedIframe(){
+    public void clickOnNestedIframe() {
         nestedIframeLink.click();
     }
 
-    public void clickOnAlertsLink(){
+    public void clickOnNormalIframe() {
+        normalIframeLink.click();
+    }
+
+    public void clickSerializeLink() {
+        serializeLink.click();
+    }
+
+    public void clickConstrainMovementLink() {
+        constrainMovementLink.click();
+    }
+
+    public void clickHandlesLink() {
+        handlesLink.click();
+    }
+
+    public void clickAcceptLink() {
+        acceptLink.click();
+    }
+
+    public void clickRevertDraggablePosition() {
+        revertDraggablePositionLink.click();
+    }
+
+    public void clickSynchronousResizeLink() {
+        synchronousResizeLink.click();
+    }
+
+    public void clickTextAreaLink() {
+        textAreaLink.click();
+    }
+
+    public void clickAlertsLink() {
         alertsLink.click();
     }
 
-    public void clickOnAnimateLink(){
-        animateLink.click();
+    public void clickAlertTypesLink() {
+        alertTypesLink.click();
     }
 }

@@ -41,7 +41,7 @@ public class Driver {
                     // firefoxOptions.addArguments("--start-maximized");
                     firefoxOptions.addArguments("--allow-running-insecure-content");
                     firefoxOptions.addArguments("--ignore-certificate-errors");
-                    DRIVER_POOL.set(new FirefoxDriver(firefoxOptions));
+                    DRIVER_POOL.set(new FirefoxDriver());
                 }
                 case "edge" -> {
                     EdgeOptions edgeOptions = new EdgeOptions();
