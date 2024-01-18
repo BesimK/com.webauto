@@ -6,19 +6,16 @@
 
     <groupId>org.example</groupId>
     <artifactId>com.webauto</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-2</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <!-- Dependency Versions -->
-        <selenium.version>4.16.1</selenium.version>
+        <selenium.version>4.15.0</selenium.version>
         <junit.version>5.10.0</junit.version>
-
         <assertJ.version>3.24.2</assertJ.version>
-
         <browser>chrome</browser>
     </properties>
 
@@ -29,7 +26,6 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-
         <!-- JUnit -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -43,7 +39,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
@@ -63,7 +58,6 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -74,9 +68,6 @@
                     </includes>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
-
 </project>

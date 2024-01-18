@@ -7,13 +7,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
 import java.io.File;
 import java.util.HashMap;
 
 public class Driver {
 
     private static final ThreadLocal<WebDriver> DRIVER_POOL = new ThreadLocal<>();
+
     public static String browser = System.getProperty("browser", "chrome").toLowerCase();
 
     private Driver() {
@@ -62,5 +62,4 @@ public class Driver {
             DRIVER_POOL.remove();
         }
     }
-
 }

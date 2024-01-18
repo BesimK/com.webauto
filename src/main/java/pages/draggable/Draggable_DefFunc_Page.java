@@ -24,5 +24,4 @@ public class Draggable_DefFunc_Page extends BasePage {
     public int getLocationOfDraggableY() {
         return draggable.getLocation().getY();
     }
-
 }

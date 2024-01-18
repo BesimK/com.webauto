@@ -70,6 +70,4 @@ public class Droppable_DefFunc_Page extends BasePage {
     public int getDraggableElementTopEdge() {
         return draggableElement.getLocation().getY();
     }
-
-
 }

@@ -38,5 +38,4 @@ public class AutoScrolling_Page extends BasePage {
     public int getLocationOfThirdDraggableX() {
         return thirdDraggable.getLocation().getX();
     }
-
 }

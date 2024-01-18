@@ -10,12 +10,13 @@ import org.junit.jupiter.api.Test;
  * 3. click on the default functionality button
  * 4. Drag the source-draggable element and drop it to the target-droppable element
  * 5. Verify that the source-draggable element has been dropped to the target-droppable element
- * 6. Verify that the text of the target-droppable element has changed to 'Dropped'!
+ * 6. Verify that the text of the target-droppable element has changed to Dropped!
  */
 public class Droppable_Def_Func_Test extends Hooks {
 
     @Test
     void testDefaultDroppable() {
+
         //1. Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
 
@@ -43,7 +44,7 @@ public class Droppable_Def_Func_Test extends Hooks {
         Assertions.assertThat(draggableLeftEdge).isBetween(droppableLeftEdge, droppableRightEdge);
         Assertions.assertThat(draggableRightEdge).isBetween(droppableLeftEdge, droppableRightEdge);
 
-        //6. Verify that the text of the target-droppable element has changed to 'Dropped'!
+        //6. Verify that the text of the target-droppable element has changed to Dropped!
         Assertions.assertThat(pages.getDroppableDefFuncPage().getDroppableElementText()).isEqualTo("Dropped!");
     }
 }
