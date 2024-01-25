@@ -1,6 +1,6 @@
-package datepickerTest;
+package datepickertest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class DisplayMultipleMonths_Test extends Hooks {

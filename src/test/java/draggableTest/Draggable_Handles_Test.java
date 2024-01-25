@@ -1,6 +1,6 @@
 package draggableTest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class Draggable_Handles_Test extends Hooks {

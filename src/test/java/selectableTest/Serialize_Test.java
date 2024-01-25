@@ -1,6 +1,6 @@
 package selectableTest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class Serialize_Test extends Hooks {

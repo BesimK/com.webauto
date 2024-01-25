@@ -1,6 +1,6 @@
-package dialogTest;
+package dialogtest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class ModalForm_Test extends Hooks {

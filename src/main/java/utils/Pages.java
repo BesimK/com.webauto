@@ -2,10 +2,13 @@ package utils;
 
 import pages.HomePage;
 import pages.WebAutomationPage;
+import pages.accordion.CollapseContent_Page;
 import pages.alerts.AlertTypes_Page;
 import pages.alerts.ShowConfirm_Page;
 import pages.alerts.ShowPrompt_Page;
 import pages.autocomplete.AccentFolding_Page;
+import pages.button.WithIcon_Page;
+import pages.checkboxradio.ProductSelectorPage;
 import pages.controlgroup.Toolbar_Page;
 import pages.datepicker.DisplayMultipleMonths_Page;
 import pages.datepicker.SelectDateRange_Page;
@@ -27,6 +30,10 @@ import pages.resizable.SynchronusResize_Page;
 import pages.resizable.TextArea_Page;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Serialize_Page;
+import pages.slider.SnapToIncrements_Page;
+import pages.sortable.DisplayAsGrid_Page;
+import pages.sortable.IncludeExcludeItems_Page;
+import pages.spinner.SpinnerOverflow_Page;
 
 public class Pages {
 
@@ -40,7 +47,11 @@ public class Pages {
 
     private Accept_Page acceptPage;
 
+    private CollapseContent_Page collapseContentPage;
+
     private ConstrainMovement_Page constrainMovementPage;
+
+    private DisplayAsGrid_Page displayAsGridPage;
 
     private DisplayMultipleMonths_Page displayMultipleMonthsPage;
 
@@ -56,11 +67,15 @@ public class Pages {
 
     private Icons_Page iconsPage;
 
+    private IncludeExcludeItems_Page includeExcludeItemsPage;
+
     private ModalForm_Page modalFormPage;
 
     private NestedIframe_Page nestedIframePage;
 
     private NormalIframe_Page normalIframePage;
+
+    private ProductSelectorPage productSelectorPage;
 
     private Resizable_DefFunc_Page resizableDefFuncPage;
 
@@ -76,6 +91,10 @@ public class Pages {
 
     private ShowPrompt_Page showPromptPage;
 
+    private SnapToIncrements_Page snapToIncrementsPage;
+
+    private SpinnerOverflow_Page spinnerOverflowPage;
+
     private SynchronusResize_Page synchronusResizePage;
 
     private TextArea_Page textAreaPage;
@@ -83,6 +102,8 @@ public class Pages {
     private Toolbar_Page toolbarPage;
 
     private WebAutomationPage webAutomationPage;
+
+    private WithIcon_Page withIconPage;
 
     public Pages() {
         homePage = new HomePage();
@@ -112,6 +133,13 @@ public class Pages {
         selectDateRangePage = new SelectDateRange_Page();
         toolbarPage = new Toolbar_Page();
         modalFormPage = new ModalForm_Page();
+        snapToIncrementsPage = new SnapToIncrements_Page();
+        spinnerOverflowPage = new SpinnerOverflow_Page();
+        displayAsGridPage = new DisplayAsGrid_Page();
+        includeExcludeItemsPage = new IncludeExcludeItems_Page();
+        collapseContentPage = new CollapseContent_Page();
+        withIconPage = new WithIcon_Page();
+        productSelectorPage = new ProductSelectorPage();
     }
 
     public HomePage getHomePage() {
@@ -220,5 +248,33 @@ public class Pages {
 
     public ModalForm_Page getModalFormPage() {
         return modalFormPage;
+    }
+
+    public SnapToIncrements_Page getSnapToIncrementsPage() {
+        return snapToIncrementsPage;
+    }
+
+    public SpinnerOverflow_Page getSpinnerOverflowPage() {
+        return spinnerOverflowPage;
+    }
+
+    public DisplayAsGrid_Page getDisplayAsGridPage() {
+        return displayAsGridPage;
+    }
+
+    public IncludeExcludeItems_Page getIncludeExcludeItemsPage() {
+        return includeExcludeItemsPage;
+    }
+
+    public CollapseContent_Page getCollapseContentPage() {
+        return collapseContentPage;
+    }
+
+    public WithIcon_Page getWithIconPage() {
+        return withIconPage;
+    }
+
+    public ProductSelectorPage getProductSelectorPage() {
+        return productSelectorPage;
     }
 }

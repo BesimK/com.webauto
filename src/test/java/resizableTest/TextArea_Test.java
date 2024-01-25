@@ -1,6 +1,6 @@
 package resizableTest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class TextArea_Test extends Hooks {

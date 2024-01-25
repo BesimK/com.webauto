@@ -1,6 +1,6 @@
 package progressbarTest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 import utils.BrowserUtils;
 

@@ -1,6 +1,6 @@
-package menuTest;
+package menutest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class Icons_Test extends Hooks {

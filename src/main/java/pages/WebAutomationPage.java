@@ -44,11 +44,38 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Serialize")
     private WebElement serializeLink;
 
+    @FindBy(linkText = "Sortable")
+    private WebElement sortableLink;
+
+    @FindBy(linkText = "Display as Grid")
+    private WebElement displayAsGridLink;
+
+    @FindBy(linkText = "Include / exclude items")
+    private WebElement includeExcludeItemsLink;
+
+    @FindBy(linkText = "Accordion")
+    private WebElement accordionLink;
+
+    @FindBy(linkText = "Collapse Content")
+    private WebElement collapseContentLink;
+
     @FindBy(linkText = "Autocomplete")
     private WebElement autocompleteLink;
 
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
+
+    @FindBy(linkText = "Button")
+    private WebElement buttonLink;
+
+    @FindBy(linkText = "With Icon")
+    private WebElement withIconLink;
+
+    @FindBy(linkText = "Checkbox Radio")
+    private WebElement checkboxRadioLink;
+
+    @FindBy(linkText = "Product Selector")
+    private WebElement productSelectorLink;
 
     @FindBy(linkText = "Control Group")
     private WebElement controlGroupLink;
@@ -82,6 +109,18 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Download Dialog")
     private WebElement downloadDialogLink;
+
+    @FindBy(linkText = "Slider")
+    private WebElement sliderLink;
+
+    @FindBy(linkText = "Snap to increments")
+    private WebElement snapToIncrementLink;
+
+    @FindBy(linkText = "Spinner")
+    private WebElement spinnerLink;
+
+    @FindBy(linkText = "Spinner Overflow")
+    private WebElement spinnerOverflowLink;
 
     @FindBy(linkText = "Iframe")
     private WebElement iframeLink;
@@ -246,5 +285,57 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnToolbarLink() {
         toolbarLink.click();
+    }
+
+    public void clickOnSliderLink() {
+        sliderLink.click();
+    }
+
+    public void clickOnSnapToIncrementLink() {
+        snapToIncrementLink.click();
+    }
+
+    public void clickOnSpinnerLink() {
+        spinnerLink.click();
+    }
+
+    public void clickOnSpinnerOverflowLink() {
+        spinnerOverflowLink.click();
+    }
+
+    public void clickOnSortableLink() {
+        sortableLink.click();
+    }
+
+    public void clickOnDisplayAsGridLink() {
+        displayAsGridLink.click();
+    }
+
+    public void clickOnIncludeExcludeItemsLink() {
+        includeExcludeItemsLink.click();
+    }
+
+    public void clickOnAccordionLink() {
+        accordionLink.click();
+    }
+
+    public void clickOnCollapseContentLink() {
+        collapseContentLink.click();
+    }
+
+    public void clickOnButtonLink() {
+        buttonLink.click();
+    }
+
+    public void clickOnWithIconLink() {
+        withIconLink.click();
+    }
+
+    public void clickOnCheckboxRadioLink() {
+        checkboxRadioLink.click();
+    }
+
+    public void clickOnProductSelectorLink() {
+        productSelectorLink.click();
     }
 }

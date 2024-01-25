@@ -1,6 +1,6 @@
-package droppableTest;
+package droppabletest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

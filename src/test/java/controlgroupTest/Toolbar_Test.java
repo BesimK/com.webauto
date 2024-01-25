@@ -1,6 +1,6 @@
-package controlgroupTest;
+package controlgrouptest;
 
-import BaseTest.Hooks;
+import basetest.Hooks;
 import org.junit.jupiter.api.Test;
 
 public class Toolbar_Test extends Hooks {

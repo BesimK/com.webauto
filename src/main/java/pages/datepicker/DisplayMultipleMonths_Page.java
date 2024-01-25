@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 import utils.BrowserUtils;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
